@@ -1,0 +1,232 @@
+@font-face {
+  font-family: Jost;
+  src: url("../fonts/jost.ttf");
+}
+
+colors {
+--dark-cyan: #56c8ea;
+--black: #3c4240;
+--nice-gray: #a3a3a3;
+}
+
+html {
+  font-family: Jost, serif;
+  border: 1px solid gray;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li:last-child {
+  margin-bottom: 0;
+}
+
+main {
+  padding-left: 15px;
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 450px 1fr;
+  grid-template-rows: 520px 1fr;
+}
+
+#section-1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #56c8ea;
+}
+
+#section-2 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  background-color: #3c4240;
+  color: white;
+}
+
+#section-3 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+#section-2 section {
+  margin-top: 40px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+#languages {
+  margin-bottom: 30px;
+}
+
+#section-3 section {
+  margin-top: 50px;
+  margin-left: 60px;
+  margin-right: 100px;
+}
+
+#title {
+  align-items: center;
+  text-transform: uppercase;
+}
+
+#photo {
+  height: 220px;
+  width: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.name {
+  font-size: 48px;
+  color: #3c4240;
+}
+
+.position {
+  margin-top: 15px;
+  font-size: 22px;
+  color: #3c4240;
+}
+
+.section-heading, .section-heading-2 {
+  align-items: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.section-heading-2 {
+  border-bottom: 4px solid black;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  margin-right: 30px;
+}
+
+.arrow {
+  height: 15px;
+  width: 15px;
+  margin-left: 12px;
+}
+
+.contact-item {
+  align-items: center;
+}
+
+.education-item {
+  align-items: baseline;
+}
+
+.education-data {
+  margin-left: 43px;
+}
+
+.section-2-list li {
+  margin-bottom: 20px;
+}
+
+.section-2-list li:last-child {
+  margin-bottom: 0;
+}
+
+.language-list {
+  padding-left: 20px;
+  list-style: square;
+}
+
+.bar {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress-bar {
+  height: 10px;
+  width: 150px;
+  background-color: #a3a3a3;
+}
+
+.skill-bar {
+  margin-top: 10px;
+  height: 15px;
+  width: 200px;
+  background-color: #a3a3a3;
+}
+
+.filler {
+  height: 100%;
+  width: 70%;
+  background-color: #56c8ea;
+}
+
+#about-me p {
+  text-align: justify;
+}
+
+.job-grid {
+  display: grid;
+  grid-template-rows: 30px 1fr;
+  grid-template-columns: 70px 300px 1fr;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.job-grid .description {
+  display: inline-grid;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  text-align: justify;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  grid-column-gap: 100px;
+}
+
+.referencer-name {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.years {
+  text-align: right;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.gray {
+  color: #a3a3a3;
+}
